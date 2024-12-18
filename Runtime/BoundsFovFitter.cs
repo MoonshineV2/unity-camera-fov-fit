@@ -7,7 +7,7 @@ namespace Gilzoide.CameraFit
     public class BoundsFovFitter : AFovFitter
     {
         [Tooltip("Bounds used to fit the target Camera's FOV.")]
-        [SerializeField] protected Bounds _bounds;
+        [SerializeField] public Bounds _bounds;
 
         protected override Bounds? GetWorldBounds()
         {
@@ -21,5 +21,7 @@ namespace Gilzoide.CameraFit
                 return null;
             }
         }
+
+
     }
 }

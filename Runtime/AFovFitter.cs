@@ -6,16 +6,18 @@ namespace Gilzoide.CameraFit
     public abstract class AFovFitter : MonoBehaviour
     {
         [Tooltip("Target Camera that will have the FOV adjusted. If null, nothing will happen.")]
-        [SerializeField] protected Camera _targetCamera;
+        [SerializeField] public Camera _targetCamera;
 
         [Tooltip("If true, the target camera's FOV will be fit in this object's Start message.")]
-        [SerializeField] protected bool _applyOnStart = true;
+        [SerializeField] public bool _applyOnStart = true;
 
         [Tooltip("If true, the target camera's FOV will be fit in this object's Update message.")]
-        [SerializeField] protected bool _applyOnUpdate = false;
+        [SerializeField] public bool _applyOnUpdate = false;
 
         [Tooltip("Margins to add to the bounds when fitting the FOV, in world units.")]
-        [SerializeField] protected Vector3 _margins;
+        [SerializeField] public Vector3 _margins;
+
+
 
         protected abstract Bounds? GetWorldBounds();
 
