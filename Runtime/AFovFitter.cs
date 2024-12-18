@@ -17,8 +17,6 @@ namespace Gilzoide.CameraFit
         [Tooltip("Margins to add to the bounds when fitting the FOV, in world units.")]
         [SerializeField] public Vector3 _margins;
 
-
-
         protected abstract Bounds? GetWorldBounds();
 
         protected void Start()

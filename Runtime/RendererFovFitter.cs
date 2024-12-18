@@ -6,7 +6,7 @@ namespace Gilzoide.CameraFit
     public class RendererFovFitter : AFovFitter
     {
         [Tooltip("Renderer whose bounds will be used to fit the target Camera's FOV. If null, nothing will happen.")]
-        [SerializeField] protected Renderer _renderer;
+        [SerializeField] public Renderer _renderer;
 
         protected override Bounds? GetWorldBounds()
         {
